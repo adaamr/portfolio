@@ -78,6 +78,17 @@
 .whatioffer{
 
 
+	.what-icon{
+		float:left;
+		padding-top: 10px;
+		padding-right: 15px;
+		color: $black;
+
+		&:hover{
+			color: $steel;
+		}
+	}
+
 
 	background-color: $silver;
 
@@ -143,3 +154,48 @@ h3{
 	@include border-radius(10px);
 	border: solid $smoke 2px;
 }
+
+// Contact page 
+
+.contact-intro {
+	padding-top: 20px;
+	text-align: center;
+
+	h1{
+		font-weight: 300;
+		font-size: 1.8em;
+	}
+}
+
+.contact-form{
+	text-align: center;
+
+	label{
+		padding-bottom: 10px;
+		font-size: 1.4em;
+		font-weight: 300;
+	}
+
+	input{
+		border: 2px solid $steel;
+		@include border-radius(15px);
+		font-size: 1.1em;
+		letter-spacing: 1px;
+	}
+
+	textarea{
+		border: 2px solid $steel;
+		@include border-radius(15px);
+		font-size: 1.1em;
+		letter-spacing: 1px;
+	}	
+}
+
+@media (min-width: 730px) {
+
+	.me-image{
+		padding-bottom: 10px;
+	}
+	
+}
+
